@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Cube with Three.js in vue.js"/>
+    <CubeCanvas/>
+    <HelloWorld msg="Line with Three.js in vue.js"/>
+    <LineCanvas/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import CubeCanvas from './components/CubeCanvas.vue'
+import LineCanvas from './components/LineCanvas.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    CubeCanvas,
+    LineCanvas
+}
 }
 </script>
 
