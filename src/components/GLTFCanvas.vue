@@ -55,7 +55,7 @@ export default {
     this.sceneGLTF.background = new THREE.Color('hsl(0, 100%, 100%)')
 
     //Carga el asset.
-    this.loader.load('../assets/Fished.gltf', (gltf) => {
+    this.loader.load('assets/Fished.gltf', (gltf) => {
       const model = gltf.scene;
       model.position.set(0, -2.5, 0);
       model.rotation.set(0, 35, 0);
