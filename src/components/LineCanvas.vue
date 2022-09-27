@@ -25,8 +25,7 @@ export default {
       sceneLine: scene,
       cameraLine: camera,
       rendererLine: renderer,
-      line: line,
-      speed: 0.01
+      line: line
     }
   },
   created: function () {
@@ -38,10 +37,10 @@ export default {
   },
   mounted: function () {
     this.$refs.canvasLine.appendChild(this.rendererLine.domElement)
-    this.animate()
+    this.render()
   },
   methods: {
-    animate: function () {
+    render: function () {
       this.rendererLine.render(this.sceneLine, this.cameraLine);
     }
   },

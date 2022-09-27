@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Cube with Three.js in vue.js"/>
-    <CubeCanvas/>
-    <HelloWorld msg="Line with Three.js in vue.js"/>
-    <LineCanvas/>
+    <HelloWorld msg="Cube with Three.js in vue.js" />
+    <CubeCanvas />
+    <HelloWorld msg="Line with Three.js in vue.js" />
+    <LineCanvas />
+    <HelloWorld msg="GLTF with Three.js in vue.js" />
+    <GLTFCanvas />
   </div>
 </template>
 
@@ -11,13 +13,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import CubeCanvas from './components/CubeCanvas.vue'
 import LineCanvas from './components/LineCanvas.vue'
+import GLTFCanvas from './components/GLTFCanvas.vue'
 export default {
   name: 'App',
   components: {
     HelloWorld,
     CubeCanvas,
-    LineCanvas
-}
+    LineCanvas,
+    GLTFCanvas
+  }
 }
 </script>
 
